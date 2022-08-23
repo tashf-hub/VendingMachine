@@ -59,8 +59,7 @@ class VendingMachine:
         drink=drink=self.get_drink_by_name(bevarage_name)
         return 0<drink.get_stock()
     
-"""
+
 if __name__=="__main__":
     machine=VendingMachine("selling.csv")
     machine.sell(200,"cola")
-    """
