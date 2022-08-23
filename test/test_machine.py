@@ -55,7 +55,7 @@ class TestVendingMachine(unittest.TestCase):
     
     def test_get_drink_by_name(self):
         drink=self.machine.get_drink_by_name("cola")
-        self.assertEquals("160",drink.get_price())
+        self.assertEquals(160,drink.get_price())
         drink2=self.machine.get_drink_by_name("colala")
         self.assertIsNone(drink2)
     
