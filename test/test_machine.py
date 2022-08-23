@@ -8,13 +8,13 @@ class TestCSVPrinter(unittest.TestCase):
     def test_allread(self):
         #すべての行を読んでいるか
         l = self.printer.read()
-        self.assertEquals(2,len(l))
+        self.assertEquals(3,len(l))
         print("test_allread")
 
     def test_split(self):
         #", "で区切られているか
         row0=self.printer.read()[0]
-        self.assertEquals(2,len(row0))
+        self.assertEquals(3,len(row0))
 
     
     def test_not_exist_file(self):
