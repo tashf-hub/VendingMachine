@@ -1,5 +1,5 @@
 import unittest
-from vendingmachine.vendingmachine import CSVReader,SellingBeverage,VendingMachine
+from vendingmachine.vendingmachine import CSVReader,SellingBeverage,VendingMachine,Person
 
 class TestCSVPrinter(unittest.TestCase):
     def setUp(self):
@@ -57,9 +57,22 @@ class TestVendingMachine(unittest.TestCase):
         drink=self.machine.get_drink_by_name("cola")
         self.assertEquals("160",drink.get_price())
     
+    def test_input_order(self):
+        order=[200,"cola"]
+
+        pass
+    
     def test_sell(self):
         a=self.machine.sell(200,"cola")
         self.assertEquals("cola",a.get_name())
+
+class TestPerson(unittest.TestCase):
+    def setUp(self) -> None:
+        machine=VendingMachine("sample.csv")
+        person=Penson(1000,)
+        return super().setUp()
+    def test_buy(self):
+
 
 
 
