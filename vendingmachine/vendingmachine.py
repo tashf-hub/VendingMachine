@@ -59,6 +59,8 @@ class VendingMachine:
         drink=drink=self.get_drink_by_name(bevarage_name)
         return 0<drink.get_stock()
     
+    def generate_bug(self):
+        print(self.get_drink_by_name("col").get_price())
 
 if __name__=="__main__":
     machine=VendingMachine("selling.csv")
