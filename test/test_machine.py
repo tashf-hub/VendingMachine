@@ -1,5 +1,5 @@
 import unittest
-from vendingmachine.vendingmachine import CSVReader,SellingBeverage,VendingMachine,Person
+from vendingmachine.vendingmachine import CSVReader,SellingBeverage,VendingMachine
 
 class TestCSVPrinter(unittest.TestCase):
     def setUp(self):
