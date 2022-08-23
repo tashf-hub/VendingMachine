@@ -59,10 +59,6 @@ class TestVendingMachine(unittest.TestCase):
         drink2=self.machine.get_drink_by_name("colala")
         self.assertIsNone(drink2)
     
-    def test_input_order(self):
-        order=[200,"cola"]
-
-        pass
     
     def test_sell(self):
         a=self.machine.sell(200,"cola")
