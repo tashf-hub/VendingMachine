@@ -59,13 +59,6 @@ class VendingMachine:
         drink=drink=self.get_drink_by_name(bevarage_name)
         return 0<drink.get_stock()
     
-class Person:
-    def __init__(self,money,wishlist):
-        pass
-    def buy(self,machine):
-        pass
-    def get_situation():
-        pass
 
 if __name__=="__main__":
     machine=VendingMachine("selling.csv")

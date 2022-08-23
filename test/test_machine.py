@@ -66,13 +66,6 @@ class TestVendingMachine(unittest.TestCase):
         a=self.machine.sell(200,"cola")
         self.assertEquals("cola",a.get_name())
 
-class TestPerson(unittest.TestCase):
-    def setUp(self) -> None:
-        machine=VendingMachine("sample.csv")
-        person=Penson(1000,)
-        return super().setUp()
-    def test_buy(self):
-
 
 
 
