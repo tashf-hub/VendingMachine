@@ -27,21 +27,21 @@ class TestSellingBeverage(unittest.TestCase):
     #get
     def test_get_name(self):
         drink=SellingBeverage("sample",100,2)
-        self.assertEquals("sample",drink.get_name)
+        self.assertEquals("sample",drink.get_name())
     
     def test_get_price(self):
         drink=SellingBeverage("sample",100,2)
-        self.assertEquals(100,drink.get_price)
+        self.assertEquals(100,drink.get_price())
 
     def test_get_stock(self):
         drink=SellingBeverage("sample",100,2)
-        self.assertEquals(2,drink.get_stock)
+        self.assertEquals(2,drink.get_stock())
     
     #在庫がへるか
     def test_minusstock(self):
         drink=SellingBeverage("sample",100,2)
         drink.minus_stock()
         self.assertEquals(1,drink.stock)
-        
+    
 
 
